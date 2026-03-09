@@ -1,0 +1,117 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #f4f6f9;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .form-container {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 35px;
+        width: 100%;
+        max-width: 520px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        border-top: 6px solid #ff6b6b;
+    }
+
+    .form-header {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .form-header h1 {
+        font-size: 26px;
+        color: #222;
+        margin-bottom: 6px;
+    }
+
+    .form-header p {
+        font-size: 14px;
+        color: #777;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+        font-weight: 500;
+        color: #444;
+        margin-bottom: 6px;
+        display: block;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 11px 14px;
+        border: 1.5px solid #ddd;
+        border-radius: 8px;
+        font-size: 15px;
+        transition: 0.2s ease;
+        background-color: #fafafa;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        border-color: #ff6b6b;
+        background: #fff;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.15);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 90px;
+    }
+
+    .form-row {
+        display: flex;
+        gap: 15px;
+    }
+
+    .form-row .form-group {
+        flex: 1;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        background-color: #ff6b6b;
+        color: white;
+        transition: 0.3s ease;
+        margin-top: 8px;
+    }
+
+    .submit-btn:hover {
+        background-color: #e55656;
+        letter-spacing: 0.5px;
+    }
+
+    .required {
+        color: #ff6b6b;
+    }
+
+    @media (max-width: 480px) {
+        .form-row {
+            flex-direction: column;
+        }
+    }

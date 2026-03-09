@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom & Blossom — Flowers, Plants & Garden Magic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/style.css">
+</head>
+
+
+<body>
+
+<div class="cursor" id="cursor"></div>
+
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#" class="logo-wrap">
+      <span class="logo-icon-spin">🌸</span>
+      <div>
+        <div class="logo-bloom">Bloom & Blossom</div>
+        <div class="logo-tagline">Flowers · Plants · Garden Magic</div>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="#flowers">Flowers</a>
+      <a href="#plants">Indoor Plants</a>
+      <a href="#occasions">Occasions</a>
+      <a href="#bouquets">Bouquets</a>
+      <a href="#about">Our Story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-wishlist">🤍 Wishlist</button>
+      <button class="btn-cart">🛍 Cart (0)</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-decor-blob"></div>
+  <div class="hero-left">
+    <div class="hero-eyebrow">🌺 Spring Collection 2025</div>
+    <h1 class="hero-headline">
+      Every bloom<br>is a love<br><em>letter to you.</em>
+    </h1>
+    <p class="hero-sub">Handpicked flowers, rare botanicals & living arrangements — grown with love, delivered with magic. Because you deserve beauty every single day.</p>
+    <div class="hero-btns">
+      <a href="#flowers" class="btn-primary">🌸 Shop Flowers</a>
+      <a href="#plants" class="btn-secondary">🌿 Explore Plants</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><span class="stat-num">2,400+</span><span class="stat-label">Happy Blooms</span></div>
+      <div class="stat-item"><span class="stat-num">180+</span><span class="stat-label">Varieties</span></div>
+      <div class="stat-item"><span class="stat-num">4.9★</span><span class="stat-label">Loved By All</span></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-main">
+      <img src="https://thumbs.dreamstime.com/b/stunning-floral-arrangement-fresh-flowers-sale-vibrant-flower-shop-experience-beauty-nature-breathtaking-378741841.jpg" alt="Beautiful flowers">
+      <div class="hero-badge-float">🌸 Fresh daily from our garden</div>
+      <div class="hero-teddy">🧸</div>
+    </div>
+    <div class="hero-img-sm">
+      <img src="https://i.pinimg.com/736x/6c/ee/fb/6ceefba965ee472d31756da6d42407e4.jpg" alt="Sunflowers">
+      <div class="hero-badge-float">☀️ Sunshine bundles</div>
+    </div>
+    <div class="hero-img-sm">
+      <img src="https://gardenerspath.com/wp-content/uploads/2020/08/How-to-Grow-Roses-Cover.jpg" alt="Roses">
+      <div class="hero-badge-float">🌹 Garden roses</div>
+    </div>
+  </div>
+</section>
+
+<!-- AFFIRMATION STRIP -->
+<div class="affirmation-strip">
+  <div class="affirmation-track" id="affirmTrack">
+    <span>You are enough</span>
+    <span>Bloom where you are planted</span>
+    <span>Be your own kind of beautiful</span>
+    <span>Love yourself first</span>
+    <span>You are magic</span>
+    <span>Every day is a fresh start</span>
+    <span>Choose joy always</span>
+    <span>You are enough</span>
+    <span>Bloom where you are planted</span>
+    <span>Be your own kind of beautiful</span>
+    <span>Love yourself first</span>
+    <span>You are magic</span>
+    <span>Every day is a fresh start</span>
+    <span>Choose joy always</span>
+  </div>
+</div>
+
+<!-- FLOWERS SECTION -->
+<section class="flowers-section reveal" id="flowers">
+  <div class="section-head">
+    <div class="section-eyebrow">✿ Fresh Arrivals</div>
+    <h2 class="section-title">Our <em>Favourite</em> Blooms</h2>
+    <p class="section-sub">Rare varieties & beloved classics — every petal grown with intention and delivered with a kiss of care.</p>
+  </div>
+
+  <div class="filter-tabs">
+    <button class="tab-btn active" data-filter="all">All Blooms 🌸</button>
+    <button class="tab-btn" data-filter="roses">Roses 🌹</button>
+    <button class="tab-btn" data-filter="tropical">Tropical 🌺</button>
+    <button class="tab-btn" data-filter="wildflower">Wildflowers 🌼</button>
+    <button class="tab-btn" data-filter="seasonal">Seasonal 🌷</button>
+  </div>
+
+  <div class="flower-grid" id="flowerGrid">
+
+    <article class="flower-card has-sale" data-category="roses">
+      <div class="fc-img-wrap">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/055/248/299/small/vibrant-bouquet-of-blush-and-white-roses-with-soft-greenery-background-photo.jpg" alt="Garden Rose" loading="lazy">
+        <span class="fc-badge">Roses</span>
+        <button class="fc-heart" aria-label="Save">🤍</button>
+        <span class="fc-sale">Sale!</span>
+      </div>
+      <div class="fc-body">
+        <h3 class="fc-name">Blush Garden Rose</h3>
+        <p class="fc-latin">Rosa × hybrida</p>
+        <p class="fc-desc">Velvety clusters in the softest blush, blooming from early summer through first frost.</p>
+        <div class="fc-footer">
+          <span class="fc-price"><span class="old">$15.99</span>$12.99</span>
+          <button class="fc-add add-to-cart">+ Add</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="flower-card tall" data-category="wildflower">
+      <div class="fc-img-wrap">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw1DiFcw0HNyvqDhKdgjpdRythB-XZXGSw0w&s" alt="Sunflower" loading="lazy">
+        <span class="fc-badge">Wildflower</span>
+        <button class="fc-heart" aria-label="Save">🤍</button>
+      </div>
+      <div class="fc-body">
+        <h3 class="fc-name">Velvet Sunflower</h3>
+        <p class="fc-latin">Helianthus annuus</p>
+        <p class="fc-desc">A golden giant that follows the sun, radiating warmth and pure summer abundance.</p>
+        <div class="fc-footer">
+          <span class="fc-price">From $4.99</span>
+          <button class="fc-add add-to-cart">+ Add</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="flower-card" data-category="seasonal">
+      <div class="fc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1499002238440-d264edd596ec?auto=format&fit=crop&w=600&q=80" alt="Lavender" loading="lazy">
+        <span class="fc-badge">Seasonal</span>
+        <button class="fc-heart" aria-label="Save">🤍</button>
+      </div>
+      <div class="fc-body">
+        <h3 class="fc-name">Sweet Lavender</h3>
+        <p class="fc-latin">Lavandula angustifolia</p>
+        <p class="fc-desc">Fragrant violet spires that perfume entire gardens and invite pollinators all season.</p>
+        <div class="fc-footer">
+          <span class="fc-price">From $8.99</span>
+          <button class="fc-add add-to-cart">+ Add</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="flower-card" data-category="seasonal">
+      <div class="fc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=600&q=80" alt="Tulip" loading="lazy">
+        <span class="fc-badge">Seasonal</span>
+        <button class="fc-heart" aria-label="Save">🤍</button>
+      </div>
+      <div class="fc-body">
+        <h3 class="fc-name">Fairy Tulip</h3>
+        <p class="fc-latin">Tulipa gesneriana</p>
+        <p class="fc-desc">Spring's celebrated herald — elegant cups of pure colour rising from winter soil.</p>
+        <div class="fc-footer">
+          <span class="fc-price">From $9.99</span>
+          <button class="fc-add add-to-cart">+ Add</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="flower-card tall" data-category="tropical">
+      <div class="fc-img-wrap">
+        <img src="https://edsplantshop.com/cdn/shop/files/phalaenopsis-orchid-487722.jpg?v=1768961897&width=1214" alt="Orchid" loading="lazy">
+        <span class="fc-badge">Tropical</span>
+        <button class="fc-heart" aria-label="Save">🤍</button>
+      </div>
+      <div class="fc-body">
+        <h3 class="fc-name">Moonlit Orchid</h3>
+        <p class="fc-latin">Phalaenopsis amabilis</p>
+        <p class="fc-desc">Architectural blooms of otherworldly grace that last for months under gentle care.</p>
+        <div class="fc-footer">
+          <span class="fc-price">From $24.99</span>
+          <button class="fc-add add-to-cart">+ Add</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="flower-card has-sale" data-category="seasonal">
+      <div class="fc-img-wrap">
+        <img src="https://i.pinimg.com/736x/6b/26/8c/6b268cd03ac892d54e3b5ff7efc64706.jpg" alt="Hydrangea" loading="lazy">
+        <span class="fc-badge">Seasonal</span>
+        <button class="fc-heart" aria-label="Save">🤍</button>
+        <span class="fc-sale">New!</span>
+      </div>
+      <div class="fc-body">
+        <h3 class="fc-name">Cotton Hydrangea</h3>
+        <p class="fc-latin">Hydrangea macrophylla</p>
+        <p class="fc-desc">Lush snowball clusters that shift from blush to cobalt with soil acidity.</p>
+        <div class="fc-footer">
+          <span class="fc-price">From $14.99</span>
+          <button class="fc-add add-to-cart">+ Add</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="flower-card" data-category="wildflower">
+      <div class="fc-img-wrap">
+        <img src="https://i.pinimg.com/736x/81/a8/02/81a802094e8e82d9cd282fc58ba98704.jpg" alt="Chamomile" loading="lazy">
+        <span class="fc-badge">Wildflower</span>
+        <button class="fc-heart" aria-label="Save">🤍</button>
+      </div>
+      <div class="fc-body">
+        <h3 class="fc-name">Meadow Chamomile</h3>
+        <p class="fc-latin">Matricaria chamomilla</p>
+        <p class="fc-desc">Delicate daisy-like blooms with sweet apple scent, beloved in meadows and teacups.</p>
+        <div class="fc-footer">
+          <span class="fc-price">From $3.99</span>
+          <button class="fc-add add-to-cart">+ Add</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="flower-card tall" data-category="seasonal">
+      <div class="fc-img-wrap">
+        <img src="https://media.istockphoto.com/id/512882246/photo/dahlia-is-called-orange-garden.jpg?s=612x612&w=0&k=20&c=CZkeJ9fHifKVa6a5gEIqwjoedTN6_OwWDRkJMXTB-Nw=" alt="Dahlia" loading="lazy">
+        <span class="fc-badge">Seasonal</span>
+        <button class="fc-heart" aria-label="Save">🤍</button>
+      </div>
+      <div class="fc-body">
+        <h3 class="fc-name">Dahlia Delight</h3>
+        <p class="fc-latin">Dahlia pinnata</p>
+        <p class="fc-desc">Spectacular dinner-plate blooms with intricately layered petals in fiery autumn hues.</p>
+        <div class="fc-footer">
+          <span class="fc-price">From $11.99</span>
+          <button class="fc-add add-to-cart">+ Add</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="flower-card" data-category="tropical">
+      <div class="fc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1596438459194-f275f413d6ff?auto=format&fit=crop&w=600&q=80" alt="Bird of Paradise" loading="lazy">
+        <span class="fc-badge">Tropical</span>
+        <button class="fc-heart" aria-label="Save">🤍</button>
+      </div>
+      <div class="fc-body">
+        <h3 class="fc-name">Bird of Paradise</h3>
+        <p class="fc-latin">Strelitzia reginae</p>
+        <p class="fc-desc">Vivid orange and cobalt blooms mimicking a tropical bird in mid-flight.</p>
+        <div class="fc-footer">
+          <span class="fc-price">From $29.99</span>
+          <button class="fc-add add-to-cart">+ Add</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="flower-card" data-category="wildflower">
+      <div class="fc-img-wrap">
+        <img src="https://images.unsplash.com/photo-1474557157379-8aa74a6ef541?auto=format&fit=crop&w=600&q=80" alt="Poppy" loading="lazy">
+        <span class="fc-badge">Wildflower</span>
+        <button class="fc-heart" aria-label="Save">🤍</button>
+      </div>
+      <div class="fc-body">
+        <h3 class="fc-name">Scarlet Poppy</h3>
+        <p class="fc-latin">Papaver orientale</p>
+        <p class="fc-desc">Silky tissue-paper petals in blazing scarlet with a dramatic dark centre.</p>
+        <div class="fc-footer">
+          <span class="fc-price">From $5.99</span>
+          <button class="fc-add add-to-cart">+ Add</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="flower-card" data-category="roses">
+      <div class="fc-img-wrap">
+        <img src="https://i.pinimg.com/474x/47/5e/96/475e96997e46f4990b3437e621694f9e.jpg" alt="Peony" loading="lazy">
+        <span class="fc-badge">Roses</span>
+        <button class="fc-heart" aria-label="Save">🤍</button>
+      </div>
+      <div class="fc-body">
+        <h3 class="fc-name">Parfum Peony</h3>
+        <p class="fc-latin">Paeonia lactiflora</p>
+        <p class="fc-desc">Lushly ruffled blooms with heady fragrance, improving beautifully with every year.</p>
+        <div class="fc-footer">
+          <span class="fc-price">From $18.99</span>
+          <button class="fc-add add-to-cart">+ Add</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="flower-card" data-category="wildflower">
+      <div class="fc-img-wrap">
+        <img src="https://i.pinimg.com/736x/93/1c/b2/931cb2ac20e317729f8564bd27616b28.jpg" alt="Marigold" loading="lazy">
+        <span class="fc-badge">Wildflower</span>
+        <button class="fc-heart" aria-label="Save">🤍</button>
+      </div>
+      <div class="fc-body">
+        <h3 class="fc-name">Golden Marigold</h3>
+        <p class="fc-latin">Tagetes erecta</p>
+        <p class="fc-desc">Bold pompom blooms in fiery amber and gold that celebrate every sunny border.</p>
+        <div class="fc-footer">
+          <span class="fc-price">From $3.49</span>
+          <button class="fc-add add-to-cart">+ Add</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- AFFIRMATION CARDS SECTION -->
+<section class="affirmation-section">
+  <div class="affirmation-inner">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">💖 For You, Always</div>
+      <h2 class="section-title">A little <em>love note</em> from our garden</h2>
+      <p class="section-sub">Just like flowers, you bloom in your own time. Here's a reminder of how extraordinary you are.</p>
+    </div>
+    <div class="affirmation-grid">
+      <div class="affirm-card reveal">
+        <span class="affirm-emoji">🌸</span>
+        <p class="affirm-quote">"You are worthy of every beautiful thing life has to offer."</p>
+        <p class="affirm-sub">Every bloom in our garden is a reminder — beauty takes time, patience, and the courage to grow.</p>
+      </div>
+      <div class="affirm-card reveal" style="transition-delay:0.15s">
+        <span class="affirm-emoji">✨</span>
+        <p class="affirm-quote">"Believe in yourself as fiercely as spring believes in new beginnings."</p>
+        <p class="affirm-sub">You carry the same magic as every flower that dares to bloom after winter — unstoppable and radiant.</p>
+      </div>
+      <div class="affirm-card reveal" style="transition-delay:0.3s">
+        <span class="affirm-emoji">💕</span>
+        <p class="affirm-quote">"You are rare, precious, and absolutely irreplaceable."</p>
+        <p class="affirm-sub">Like the rarest orchid in our collection — you are one of a kind, worthy of care, wonder, and celebration.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDOOR PLANTS SECTION -->
+<section class="plants-section" id="plants">
+  <div class="plants-inner">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">🌿 Indoor Greenery</div>
+      <h2 class="section-title">Breathe life into <em>every corner</em></h2>
+      <p class="section-sub">Beautiful, easy-care indoor plants — from lush tropical leaves to architectural statement pieces. Your home, reimagined.</p>
+    </div>
+    <div class="plants-grid">
+
+      <article class="plant-card reveal">
+        <div class="pc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?auto=format&fit=crop&w=500&q=80" alt="Monstera" loading="lazy">
+          <span class="pc-tag">Trending</span>
+          <button class="pc-heart" aria-label="Save">🤍</button>
+        </div>
+        <div class="pc-body">
+          <h3 class="pc-name">Monstera Deliciosa</h3>
+          <p class="pc-latin">Monstera deliciosa</p>
+          <div class="pc-care">
+            <span class="care-chip">💧 Low water</span>
+            <span class="care-chip">☀️ Indirect light</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-price">From $24.99</span>
+            <button class="pc-add add-to-cart">+ Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="plant-card reveal" style="transition-delay:0.1s">
+        <div class="pc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1593691509543-c55fb32d8de5?auto=format&fit=crop&w=500&q=80" alt="Peace Lily" loading="lazy">
+          <span class="pc-tag">Air Purifier</span>
+          <button class="pc-heart" aria-label="Save">🤍</button>
+        </div>
+        <div class="pc-body">
+          <h3 class="pc-name">Peace Lily</h3>
+          <p class="pc-latin">Spathiphyllum wallisii</p>
+          <div class="pc-care">
+            <span class="care-chip">💧 Moderate</span>
+            <span class="care-chip">🌙 Low light OK</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-price">From $18.99</span>
+            <button class="pc-add add-to-cart">+ Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="plant-card reveal" style="transition-delay:0.2s">
+        <div class="pc-img-wrap">
+          <img src="https://botanicah.com.au/cdn/shop/products/image_1562372f-7544-435c-a424-b49c6ee63b27.jpg?v=1676749067" alt="Ficus Lyrata" loading="lazy">
+          <span class="pc-tag">Statement</span>
+          <button class="pc-heart" aria-label="Save">🤍</button>
+        </div>
+        <div class="pc-body">
+          <h3 class="pc-name">Fiddle Leaf Fig</h3>
+          <p class="pc-latin">Ficus lyrata</p>
+          <div class="pc-care">
+            <span class="care-chip">💧 Weekly</span>
+            <span class="care-chip">☀️ Bright indirect</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-price">From $39.99</span>
+            <button class="pc-add add-to-cart">+ Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="plant-card reveal" style="transition-delay:0.3s">
+        <div class="pc-img-wrap">
+          <img src="https://pcfb.gumlet.io/images/articles/golden-pothos-in-hanging-basket.png?w=640&h=426&mode=crop&s=e7a9e544458f7d4eb7e42b65f0052b33" alt="Pothos" loading="lazy">
+          <span class="pc-tag">Easy Care</span>
+          <button class="pc-heart" aria-label="Save">🤍</button>
+        </div>
+        <div class="pc-body">
+          <h3 class="pc-name">Golden Pothos</h3>
+          <p class="pc-latin">Epipremnum aureum</p>
+          <div class="pc-care">
+            <span class="care-chip">💧 Very low</span>
+            <span class="care-chip">🌙 Any light</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-price">From $12.99</span>
+            <button class="pc-add add-to-cart">+ Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="plant-card reveal" style="transition-delay:0.1s">
+        <div class="pc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1599598425947-5202edd56bdb?auto=format&fit=crop&w=500&q=80" alt="Rubber Plant" loading="lazy">
+          <span class="pc-tag">Bold Look</span>
+          <button class="pc-heart" aria-label="Save">🤍</button>
+        </div>
+        <div class="pc-body">
+          <h3 class="pc-name">Burgundy Rubber Tree</h3>
+          <p class="pc-latin">Ficus elastica</p>
+          <div class="pc-care">
+            <span class="care-chip">💧 Low water</span>
+            <span class="care-chip">☀️ Medium light</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-price">From $22.99</span>
+            <button class="pc-add add-to-cart">+ Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="plant-card reveal" style="transition-delay:0.2s">
+        <div class="pc-img-wrap">
+          <img src="https://glasswingshop.com/cdn/shop/products/8D2A2069.jpg?v=1595400475&width=533" alt="ZZ Plant" loading="lazy">
+          <span class="pc-tag">Beginners</span>
+          <button class="pc-heart" aria-label="Save">🤍</button>
+        </div>
+        <div class="pc-body">
+          <h3 class="pc-name">ZZ Plant</h3>
+          <p class="pc-latin">Zamioculcas zamiifolia</p>
+          <div class="pc-care">
+            <span class="care-chip">💧 Drought OK</span>
+            <span class="care-chip">🌙 Low light</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-price">From $16.99</span>
+            <button class="pc-add add-to-cart">+ Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="plant-card reveal" style="transition-delay:0.3s">
+        <div class="pc-img-wrap">
+          <img src="https://thumbs.dreamstime.com/b/variegated-snake-plant-isolated-white-clipping-path-sansevieria-trifasciata-209547488.jpg" alt="Snake Plant" loading="lazy">
+          <span class="pc-tag">Air Purifier</span>
+          <button class="pc-heart" aria-label="Save">🤍</button>
+        </div>
+        <div class="pc-body">
+          <h3 class="pc-name">Snake Plant</h3>
+          <p class="pc-latin">Sansevieria trifasciata</p>
+          <div class="pc-care">
+            <span class="care-chip">💧 Very low</span>
+            <span class="care-chip">🌙 Any light</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-price">From $14.99</span>
+            <button class="pc-add add-to-cart">+ Add</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="plant-card reveal" style="transition-delay:0.4s">
+        <div class="pc-img-wrap">
+          <img src="https://t3.ftcdn.net/jpg/16/61/13/60/360_F_1661136098_C2P9jKOMZGwJsS3IjdkMEySBm8XXxzPE.jpg" alt="Calathea" loading="lazy">
+          <span class="pc-tag">Rare Find</span>
+          <button class="pc-heart" aria-label="Save">🤍</button>
+        </div>
+        <div class="pc-body">
+          <h3 class="pc-name">Prayer Plant</h3>
+          <p class="pc-latin">Calathea ornata</p>
+          <div class="pc-care">
+            <span class="care-chip">💧 Moderate</span>
+            <span class="care-chip">☀️ Diffused light</span>
+          </div>
+          <div class="pc-footer">
+            <span class="pc-price">From $19.99</span>
+            <button class="pc-add add-to-cart">+ Add</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- OCCASIONS -->
+<section class="occasions-section reveal" id="occasions">
+  <div class="section-head">
+    <div class="section-eyebrow">🎀 Shop by Occasion</div>
+    <h2 class="section-title">Flowers for every <em>moment</em></h2>
+    <p class="section-sub">Whether it's a celebration, a sorry, a birthday or just because — we have the perfect bloom for it.</p>
+  </div>
+  <div class="occasion-grid">
+    <div class="occ-card">
+      <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=400&q=80" alt="Birthday">
+      <div class="occ-overlay">
+        <div class="occ-name">🎂 Birthday</div>
+        <div class="occ-count">24 arrangements</div>
+      </div>
+    </div>
+    <div class="occ-card">
+      <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=400&q=80" alt="Wedding">
+      <div class="occ-overlay">
+        <div class="occ-name">💍 Wedding</div>
+        <div class="occ-count">18 arrangements</div>
+      </div>
+    </div>
+    <div class="occ-card">
+      <img src="https://urbanstems.com/cdn/shop/files/Firecracker_MainImage_PDP_v2.jpg?v=1772552317&width=350" alt="Just Because">
+      <div class="occ-overlay">
+        <div class="occ-name">💝 Just Because</div>
+        <div class="occ-count">30 arrangements</div>
+      </div>
+    </div>
+    <div class="occ-card">
+      <img src="https://media.istockphoto.com/id/183091583/photo/arrangement-of-flowers-and-twigs-with-get-well-message.jpg?s=612x612&w=0&k=20&c=VQLhuN8XPrVumcCIa5bnTpRu9nxHkMX5N4jNNazfiJk=" alt="Get Well">
+      <div class="occ-overlay">
+        <div class="occ-name">🌻 Get Well</div>
+        <div class="occ-count">12 arrangements</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOVE YOURSELF SECTION -->
+<section class="love-section">
+  <div class="love-inner reveal">
+    <span class="love-emoji">🌺</span>
+    <h2 class="love-headline">You are the <em>most beautiful</em> thing in full bloom.</h2>
+    <p class="love-body">Every flower in our garden is a reminder — you deserve love, colour, and joy in your everyday life. Surround yourself with beauty. Buy yourself flowers. Celebrate yourself today.</p>
+    <div class="love-mantras">
+      <span class="mantra-pill">🌸 You are enough</span>
+      <span class="mantra-pill">✨ You are magic</span>
+      <span class="mantra-pill">💕 Be your own sunshine</span>
+      <span class="mantra-pill">🌿 Grow at your own pace</span>
+      <span class="mantra-pill">🦋 Bloom boldly</span>
+    </div>
+    <a href="#flowers" class="btn-love">🌸 Treat Yourself Today</a>
+  </div>
+</section>
+
+<!-- FEATURED BOUQUETS -->
+<section class="bouquets-banner reveal" id="bouquets">
+  <div class="bouquets-inner">
+    <div class="section-head">
+      <div class="section-eyebrow">💐 Signature Collection</div>
+      <h2 class="section-title">Our most <em>loved</em> bouquets</h2>
+    </div>
+    <div class="bouquets-grid">
+      <div class="bouquet-featured">
+        <img src="https://www.kcpinternational.com/wp-content/uploads/2011/07/Spring-in-Tokyo-1024x683.jpg" alt="Cherry Bouquet">
+        <div class="bf-overlay">
+          <div class="bf-label">Signature Bouquet</div>
+          <div class="bf-name">Cherry Blossom Dream</div>
+          <div class="bf-price">From $34.99</div>
+          <a href="#" class="bf-cta">Shop Now →</a>
+        </div>
+      </div>
+      <div class="bouquet-smalls">
+        <div class="bouquet-sm">
+          <img src="https://www.flowerstationdubai.com/cdn/shop/products/mixed-flower-basket_3_387a610f-9646-4fe4-bdf5-514e09994005_1024x.jpg?v=1720692409" alt="Pink Bouquet">
+          <div class="bs-overlay">
+            <div class="bs-name">Blush & Bloom</div>
+            <div class="bs-price">From $22.99</div>
+          </div>
+        </div>
+        <div class="bouquet-sm">
+          <img src="https://i0.wp.com/www.dteliving.com/wordpress/wp-content/uploads/2018/03/post-garden-baskets-nursery.jpg?ssl=1" alt="Garden Bouquet">
+          <div class="bs-overlay">
+            <div class="bs-name">Garden Whimsy</div>
+            <div class="bs-price">From $19.99</div>
+          </div>
+        </div>
+      </div>
+      <div class="bouquet-smalls">
+        <div class="bouquet-sm">
+          <img src="https://www.budsandblooms.com.au/images/products/vx9fqqkx1q.jpg" alt="Sunflower Bouquet">
+          <div class="bs-overlay">
+            <div class="bs-name">Sunshine Bundle</div>
+            <div class="bs-price">From $16.99</div>
+          </div>
+        </div>
+        <div class="bouquet-sm">
+          <img src="https://t4.ftcdn.net/jpg/15/21/93/27/360_F_1521932737_swiFlMAKnfv9PK4oHIwGPqGrTqXZiNBr.jpg" alt="Mixed Bouquet">
+          <div class="bs-overlay">
+            <div class="bs-name">Love Language</div>
+            <div class="bs-price">From $28.99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section reveal">
+  <div class="section-head">
+    <div class="section-eyebrow">💌 Our Happy Garden Family</div>
+    <h2 class="section-title">Loved by <em>thousands</em></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">The flowers arrived even more beautiful than the photos. I bought myself a bouquet just because — and it was the best decision. Will order every week!</p>
+      <div class="testi-author">
+        <div class="testi-avatar">🌸</div>
+        <div>
+          <div class="testi-name">Sarah M.</div>
+          <div class="testi-role">Plant Lover · Verified Buyer</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal" style="transition-delay:0.15s">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">My indoor plants from Bloom & Blossom have completely transformed my apartment. The care guides are amazing and the quality is absolutely incredible.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">🌿</div>
+        <div>
+          <div class="testi-name">Emily R.</div>
+          <div class="testi-role">Indoor Gardener · Verified Buyer</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal" style="transition-delay:0.3s">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">I ordered wedding flowers and was absolutely blown away. The team understood exactly my vision and executed it beyond perfection. Magical experience!</p>
+      <div class="testi-author">
+        <div class="testi-avatar">💍</div>
+        <div>
+          <div class="testi-name">Priya K.</div>
+          <div class="testi-role">Bride · Verified Buyer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+  <div class="newsletter-inner reveal">
+    <span class="nl-doll">🧸</span>
+    <h2 class="nl-headline">Blooms, love notes & garden magic — straight to your inbox.</h2>
+    <p class="nl-sub">Get planting guides, early access to rare varieties, seasonal bouquet drops & exclusive notes from our garden journal.</p>
+    <div class="nl-form">
+      <input type="email" placeholder="your@email.com" aria-label="Email">
+      <button type="button">Join the Garden 🌸</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Bloom & Blossom</div>
+        <p class="footer-about">Handpicked flowers, rare plants & living arrangements grown with love. Because every home deserves a little garden magic.</p>
+        <div class="footer-social">
+          <div class="social-btn">🌸</div>
+          <div class="social-btn">📸</div>
+          <div class="social-btn">💌</div>
+          <div class="social-btn">🐦</div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Shop</div>
+        <div class="footer-links">
+          <a href="#">Fresh Flowers</a>
+          <a href="#">Indoor Plants</a>
+          <a href="#">Bouquets</a>
+          <a href="#">Gifts & Sets</a>
+          <a href="#">Seasonal</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Garden Guide</div>
+        <div class="footer-links">
+          <a href="#">Plant Care Tips</a>
+          <a href="#">Watering Basics</a>
+          <a href="#">Seasonal Blooms</a>
+          <a href="#">Flower Journal</a>
+          <a href="#">DIY Arrangements</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Help & Info</div>
+        <div class="footer-links">
+          <a href="#">Delivery Info</a>
+          <a href="#">Returns</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Bloom & Blossom Botanical Garden. All rights reserved.</div>
+      <div class="footer-love">Made with 🌸 for flower lovers everywhere</div>
+    </div>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast">🌸 Added to cart!</div>
+
+<script src="script/script.js"></script>
+
+</body>
+</html>

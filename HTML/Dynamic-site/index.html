@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motion — Build Something Amazing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="#hero" class="nav-logo">Motion</a>
+    <div class="nav-center">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#how" class="nav-link">How it works</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme">☀</button>
+      <a href="#" class="nav-link" style="font-size:13px">Log in</a>
+      <button class="btn-nav">Get started free</button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-tag fade-up"><span class="hero-tag-dot"></span> Now in public beta</div>
+        <h1 class="fade-up delay-1">Build<br/><em>something</em><br/>amazing.</h1>
+        <p class="hero-desc fade-up delay-2">Motion helps your team bring ideas to life — with the speed you need and the clarity your projects deserve. Stop managing work. Start doing it.</p>
+        <div class="hero-actions fade-up delay-3">
+          <button class="btn-primary">Start for free</button>
+          <button class="btn-ghost">See how it works <span class="arrow">→</span></button>
+        </div>
+        <div class="hero-stats fade-up delay-4">
+          <div class="stat-item">
+            <div class="stat-num">40k+</div>
+            <div class="stat-label">Teams using Motion</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">94%</div>
+            <div class="stat-label">Avg. task completion</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">3×</div>
+            <div class="stat-label">Faster delivery</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right fade-up delay-2">
+        <div class="hero-card">
+          <div class="card-topbar">
+            <div class="card-dots">
+              <div class="dot" style="background:#ff5f57"></div>
+              <div class="dot" style="background:#febc2e"></div>
+              <div class="dot" style="background:#28c840"></div>
+            </div>
+            <span class="card-label">Sprint overview</span>
+          </div>
+
+          <div class="progress-list">
+            <div class="progress-item">
+              <div class="progress-header">
+                <span class="progress-name">Design system</span>
+                <span class="progress-pct">92%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width:92%"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-header">
+                <span class="progress-name">API integration</span>
+                <span class="progress-pct">78%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width:78%; opacity:0.7"></div></div>
+            </div>
+            <div class="progress-item">
+              <div class="progress-header">
+                <span class="progress-name">User research</span>
+                <span class="progress-pct">100%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width:100%; opacity:0.5"></div></div>
+            </div>
+          </div>
+
+          <div class="card-divider"></div>
+
+          <div class="activity-list">
+            <div class="activity-row">
+              <div class="activity-avatar" style="background:rgba(200,241,53,0.15); color:#c8f135">AK</div>
+              <span class="activity-text"><strong>Aiko</strong> completed onboarding flow</span>
+              <span class="activity-time">2m</span>
+            </div>
+            <div class="activity-row">
+              <div class="activity-avatar" style="background:rgba(120,160,255,0.15); color:#78a0ff">MR</div>
+              <span class="activity-text"><strong>Marco</strong> pushed to staging</span>
+              <span class="activity-time">14m</span>
+            </div>
+            <div class="activity-row">
+              <div class="activity-avatar" style="background:rgba(255,180,100,0.15); color:#ffb464">SL</div>
+              <span class="activity-text"><strong>Sofia</strong> approved 3 assets</span>
+              <span class="activity-time">1h</span>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class="footer-metric">
+              <div class="footer-num">12</div>
+              <div class="footer-label">Members</div>
+            </div>
+            <div class="footer-metric">
+              <div class="footer-num">63</div>
+              <div class="footer-label">Tasks done</div>
+            </div>
+            <div class="footer-metric">
+              <div class="footer-num">4d</div>
+              <div class="footer-label">To deadline</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LOGOS ── -->
+  <div id="logos">
+    <div class="logos-inner">
+      <span class="logos-label">Trusted by</span>
+      <div class="logos-list">
+        <span class="logo-name">Figma</span>
+        <span class="logo-name">OpenAI</span>
+        <span class="logo-name">Vercel</span>
+        <span class="logo-name">Cursor</span>
+        <span class="logo-name">NVIDIA</span>
+        <span class="logo-name">Stripe</span>
+        <span class="logo-name">Linear</span>
+        <span class="logo-name">Perplexity</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FEATURES ── -->
+  <section id="features">
+    <div class="section-inner">
+      <div class="section-label">Features</div>
+      <div class="section-title">Everything your<br/>team needs</div>
+      <p class="section-sub">From task assignment to live reporting — Motion keeps every piece of your project connected and moving.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <div class="feature-title">Smart Scheduling</div>
+          <p class="feature-desc">Motion's AI automatically schedules and reschedules tasks based on priorities, deadlines, and team capacity — so nothing slips through.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <div class="feature-title">Deep Integrations</div>
+          <p class="feature-desc">Connect with GitHub, Figma, Slack, Notion, and 50+ tools your team already uses. One workflow, zero context switching.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <div class="feature-title">Live Dashboards</div>
+          <p class="feature-desc">Real-time visibility into sprint progress, team velocity, and blockers. Know exactly where every project stands at a glance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <div class="feature-title">Async Collaboration</div>
+          <p class="feature-desc">Threaded comments, inline reviews, and shared context that work across timezones. Built for distributed teams that move fast.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <div class="feature-title">Enterprise Security</div>
+          <p class="feature-desc">SOC 2 Type II certified. SSO, role-based permissions, audit logs, and end-to-end encryption for organizations that can't compromise.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <div class="feature-title">AI Co-pilot</div>
+          <p class="feature-desc">Let Motion's AI write task descriptions, generate sprint summaries, flag at-risk deadlines, and surface what needs your attention today.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ── -->
+  <section id="how">
+    <div class="section-inner">
+      <div class="steps-layout">
+        <div>
+          <div class="section-label">How it works</div>
+          <div class="section-title" style="margin-bottom:48px">Up and running<br/>in minutes</div>
+
+          <div class="steps-list" id="stepsList">
+            <div class="step-item active" data-step="0">
+              <div class="step-num">01</div>
+              <div class="step-content">
+                <div class="step-title">Create your workspace</div>
+                <p class="step-desc">Invite your team, set up your first project, and import existing tasks from Jira, Asana, or a spreadsheet in one click.</p>
+              </div>
+            </div>
+            <div class="step-item" data-step="1">
+              <div class="step-num">02</div>
+              <div class="step-content">
+                <div class="step-title">Connect your tools</div>
+                <p class="step-desc">Link GitHub, Figma, Slack, and your calendar. Motion pulls context from everywhere so you don't have to copy-paste updates.</p>
+              </div>
+            </div>
+            <div class="step-item" data-step="2">
+              <div class="step-num">03</div>
+              <div class="step-content">
+                <div class="step-title">Let AI do the heavy lifting</div>
+                <p class="step-desc">Motion learns your team's pace and automatically schedules work, surfaces blockers early, and keeps everyone aligned.</p>
+              </div>
+            </div>
+            <div class="step-item" data-step="3">
+              <div class="step-num">04</div>
+              <div class="step-content">
+                <div class="step-title">Ship faster, every sprint</div>
+                <p class="step-desc">Teams using Motion report 3× faster delivery cycles and 40% fewer missed deadlines within the first month.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="steps-visual" id="stepsVisual">
+          <div class="vp-label">Workspace setup</div>
+          <div class="visual-placeholder">
+            <div class="vp-row">
+              <div class="vp-block" style="width:48px; height:48px; border-radius:10px;"></div>
+              <div style="flex:1">
+                <div class="vp-block" style="height:14px; width:60%; margin-bottom:8px; border-radius:4px;"></div>
+                <div class="vp-block" style="height:10px; width:40%; border-radius:4px;"></div>
+              </div>
+            </div>
+            <div class="vp-check">
+              <div class="vp-check-item"><div class="check-icon">✓</div>Team invited (4 members)</div>
+              <div class="vp-check-item"><div class="check-icon">✓</div>Project created: Q3 Launch</div>
+              <div class="vp-check-item"><div class="check-icon">✓</div>Imported 42 tasks from Jira</div>
+              <div class="vp-check-item" style="opacity:0.4"><div class="check-icon" style="background:transparent; border-color:var(--border); color:var(--text3)">○</div>Connect integrations</div>
+            </div>
+            <div class="vp-block" style="height:44px; width:100%; border-radius:8px; margin-top:8px; background: var(--accent-dim); border-color: var(--accent-border); display:flex; align-items:center; justify-content:center;">
+              <span style="font-size:12px; color:var(--accent); font-weight:600; letter-spacing:0.04em;">Continue to integrations →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIALS ── -->
+  <section id="testimonials">
+    <div class="section-inner">
+      <div class="section-label">Testimonials</div>
+      <div class="section-title" style="margin-bottom:56px">Loved by teams<br/>that ship</div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"Motion replaced four different tools we were using. Our sprint planning went from a two-hour meeting to a 20-minute standup. I genuinely don't know how we shipped before."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:rgba(200,241,53,0.15); color:#c8f135">JK</div>
+            <div>
+              <div class="author-name">Jamie Kwan</div>
+              <div class="author-role">Head of Product, Vercel</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"The AI scheduling is genuinely uncanny. It knows when my team is overloaded before they do. We've cut our missed deadlines by half in two sprints."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:rgba(120,160,255,0.15); color:#78a0ff">NR</div>
+            <div>
+              <div class="author-name">Nina Reyes</div>
+              <div class="author-role">Engineering Lead, Stripe</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"Finally a tool that works the way distributed teams actually work. Our Tokyo and Berlin offices are in perfect sync — no more 6am calls to catch up."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:rgba(255,180,100,0.15); color:#ffb464">DM</div>
+            <div>
+              <div class="author-name">Dario Möller</div>
+              <div class="author-role">CTO, Linear</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRICING ── -->
+  <section id="pricing">
+    <div class="section-inner">
+      <div class="section-label">Pricing</div>
+      <div class="section-title" style="margin-bottom:12px">Simple, honest<br/>pricing</div>
+      <p class="section-sub" style="margin-bottom:56px">Start free. Scale when you're ready. No hidden fees, no surprise overages.</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-plan">Starter</div>
+          <div class="pricing-price">$0</div>
+          <div class="pricing-period">Free forever · Up to 3 members</div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><span class="pf-check">✓</span> Up to 3 members</div>
+            <div class="pricing-feature"><span class="pf-check">✓</span> 5 active projects</div>
+            <div class="pricing-feature"><span class="pf-check">✓</span> Basic AI scheduling</div>
+            <div class="pricing-feature"><span class="pf-check">✓</span> Slack & GitHub integrations</div>
+            <div class="pricing-feature" style="opacity:0.4"><span class="pf-check">—</span> Advanced analytics</div>
+            <div class="pricing-feature" style="opacity:0.4"><span class="pf-check">—</span> SSO & audit logs</div>
+          </div>
+          <button class="btn-pricing outline">Get started free</button>
+        </div>
+
+        <div class="pricing-card featured">
+          <div class="pricing-badge">Most popular</div>
+          <div class="pricing-plan">Pro</div>
+          <div class="pricing-price">$16</div>
+          <div class="pricing-period">Per member / month · Billed annually</div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><span class="pf-check">✓</span> Unlimited members</div>
+            <div class="pricing-feature"><span class="pf-check">✓</span> Unlimited projects</div>
+            <div class="pricing-feature"><span class="pf-check">✓</span> Full AI co-pilot</div>
+            <div class="pricing-feature"><span class="pf-check">✓</span> 50+ integrations</div>
+            <div class="pricing-feature"><span class="pf-check">✓</span> Live dashboards</div>
+            <div class="pricing-feature" style="opacity:0.4"><span class="pf-check">—</span> SSO & audit logs</div>
+          </div>
+          <button class="btn-pricing filled">Start 14-day trial</button>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-plan">Enterprise</div>
+          <div class="pricing-price">Custom</div>
+          <div class="pricing-period">Annual contract · Dedicated support</div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature"><span class="pf-check">✓</span> Everything in Pro</div>
+            <div class="pricing-feature"><span class="pf-check">✓</span> SSO & SAML</div>
+            <div class="pricing-feature"><span class="pf-check">✓</span> Audit logs & compliance</div>
+            <div class="pricing-feature"><span class="pf-check">✓</span> Dedicated CSM</div>
+            <div class="pricing-feature"><span class="pf-check">✓</span> Custom integrations</div>
+            <div class="pricing-feature"><span class="pf-check">✓</span> SLA guarantee</div>
+          </div>
+          <button class="btn-pricing outline">Contact sales</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section id="cta">
+    <div class="cta-inner">
+      <div class="cta-title">Ready to<br/><em>move faster?</em></div>
+      <p class="cta-sub">Join 40,000+ teams already using Motion to ship better work, faster. Set up in minutes. Cancel anytime.</p>
+      <div class="email-form">
+        <input type="email" class="email-input" placeholder="you@company.com"/>
+        <button class="email-submit">Get started</button>
+      </div>
+      <p class="form-note">No credit card required · Free 14-day trial</p>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Motion</div>
+      <ul class="footer-links">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Changelog</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+      <span class="footer-copy">© 2026 Motion, Inc.</span>
+    </div>
+  </footer>
+
+  <script src="script/script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, #fdf6ec 0%, #fdf6ec 40%, #f7e8d5 100%);
+    color: #333;
+}
+
+
+
+ /* Header  */
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 60px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+.nav {
+    display: flex;
+    gap: 35px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav a:hover {
+    color: orange;
+}
+
+
+
+/* Banner */
+
+.banner {
+    text-align: center;
+    padding: 80px 20px;
+    background: #fff5e6;
+}
+
+.banner button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: none;
+    background: orange;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.banner button:hover {
+    background: darkorange;
+}
+
+
+
+/* Featured Books */
+
+.featuredBook {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 50px 40px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+
+
+/* Cozy Reading Corners */
+
+.cozyReading {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 50px 40px;
+    background: #fff8ef;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    position: relative;
+}
+
+.cozyReading::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(0,0,0,0.08);
+}
+
+
+
+/* Section Titles */
+
+#name {
+    font-size: 26px;
+    margin-bottom: 35px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#name::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+
+
+/* Table Layout */
+
+.table1 table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 30px 0;
+}
+
+.table1 th {
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.table1 img {
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.table1 th:hover {
+    transform: translateY(-8px);
+}
+
+.table1 th:hover img {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+
+
+/* Cozy Top Bar */
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.top button {
+    padding: 8px 22px;
+    border-radius: 20px;
+    border: none;
+    background: orange;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.top button:hover {
+    background: darkorange;
+}
+
+
+
+/* Footer */
+
+footer {
+    height: 70px;
+    background: white;
+    margin-top: 100px;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.05);
+}
