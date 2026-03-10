@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Arctic Infinite Visualizer</title>
+
+<style>
+
+body{
+margin:0;
+overflow:hidden;
+font-family:Poppins,sans-serif;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+}
+
+#startBtn{
+position:absolute;
+z-index:10;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+background:white;
+color:black;
+font-size:18px;
+cursor:pointer;
+}
+
+canvas{
+display:block;
+}
+
+</style>
+</head>
+
+<body>
+
+<button id="startBtn">Play Arctic 🎧</button>
+
+<canvas id="canvas"></canvas>
+
+<audio id="audio" src="music/arctic.mp3" loop></audio>
+
+<script>
+
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+const audio = document.getElementById("audio");
+const startBtn = document.getElementById("startBtn");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+/* your exact loop durations */
+
+const loops = [
+3.80,
+2.90,
+3.40,
+2.80,
+3.20,
+4.23
+];
+
+const lyrics = [
+"Maybe I just wanna be yours",
+"I wanna be yours",
+"I wanna be yours",
+"Wanna be yours",
+"Wanna be yours",
+"Wanna be yours"
+];
+
+/* particle system */
+
+const particles=[];
+
+for(let i=0;i<120;i++){
+
+particles.push({
+
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+size:Math.random()*3+1,
+speed:Math.random()*0.7+0.3
+
+});
+
+}
+
+/* play button */
+
+startBtn.onclick=()=>{
+
+startBtn.style.display="none";
+audio.play();
+animate();
+
+}
+
+/* full loop duration */
+
+const totalDuration = loops.reduce((a,b)=>a+b,0);
+
+/* animation */
+
+function animate(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+/* glowing background */
+
+let time = audio.currentTime;
+
+let glowPulse = Math.sin(time*2)*40 + 50;
+
+let bg = ctx.createRadialGradient(
+canvas.width/2,
+canvas.height/2,
+200,
+canvas.width/2,
+canvas.height/2,
+canvas.width
+);
+
+bg.addColorStop(0,"#1b2735");
+bg.addColorStop(1,"#000");
+
+ctx.fillStyle = bg;
+ctx.fillRect(0,0,canvas.width,canvas.height);
+
+/* detect loop */
+
+let t = time % totalDuration;
+
+let index=0;
+let acc=0;
+
+for(let i=0;i<loops.length;i++){
+
+if(t < acc + loops[i]){
+
+index=i;
+break;
+
+}
+
+acc += loops[i];
+
+}
+
+let progress = (t-acc)/loops[index];
+
+/* beat pulse */
+
+let beat = Math.sin(progress*Math.PI);
+
+/* particles */
+
+particles.forEach(p=>{
+
+p.y -= p.speed + beat*1;
+
+if(p.y < 0){
+
+p.y = canvas.height;
+p.x = Math.random()*canvas.width;
+
+}
+
+ctx.beginPath();
+ctx.arc(p.x,p.y,p.size + beat*2,0,Math.PI*2);
+ctx.fillStyle="rgba(255,255,255,0.8)";
+ctx.fill();
+
+});
+
+/* lyric animation */
+
+let scale = 1 + beat*0.3;
+let opacity = 1-progress;
+
+ctx.save();
+
+ctx.globalAlpha=opacity;
+
+ctx.translate(canvas.width/2,canvas.height/2);
+ctx.scale(scale,scale);
+
+let gradient = ctx.createLinearGradient(-300,0,300,0);
+
+gradient.addColorStop(0,"#89f7fe");
+gradient.addColorStop(1,"#66a6ff");
+
+ctx.fillStyle=gradient;
+
+ctx.font="bold 70px Poppins";
+
+ctx.textAlign="center";
+
+ctx.shadowColor="#66a6ff";
+ctx.shadowBlur=glowPulse;
+
+ctx.fillText(lyrics[index],0,0);
+
+ctx.restore();
+
+requestAnimationFrame(animate);
+
+}
+
+</script>
+
+</body>
+</html>
